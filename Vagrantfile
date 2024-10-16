@@ -17,6 +17,7 @@ Vagrant.configure("2") do |config|
       apt-get install -y bind9 dnsutils
       # Copiado de archivo esterno de configuracion
       cp /vagrant_config_file/named.conf.options /etc/bind/
+      cp /vagrant_config_file/venus/named.conf.local /etc/bind/
       systemctl restart bind9
     SHELL
   end
@@ -34,6 +35,7 @@ Vagrant.configure("2") do |config|
       apt-get install -y bind9 dnsutils
       # Copiado de archivo esterno de configuracion
       cp /vagrant_config_file/named.conf.options /etc/bind/
+      cp /vagrant_config_file/tierra/named.conf.local /etc/bind/
       systemctl restart bind9
     SHELL
   end
