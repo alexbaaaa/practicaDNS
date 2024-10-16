@@ -27,4 +27,4 @@ vagrant ssh venus
 ```shell
 vagrant ssh tierra
 ``` 
-![Imagen ssh Tierra](../img/sshTierra.PNG)
+![Imagen ssh Tierra](./img/sshTierra.PNG)
