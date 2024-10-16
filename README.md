@@ -63,3 +63,6 @@ Despues añadimos este mismo archivo a cada maquina virtual con:
 cp ./vagrant_config_file/named.conf.options /etc/bind/
 ``` 
 Este comando lo añadimos a las dos provisiones
+
+
+Modificamos el archivo `named.conf.opstions` con los siguientes parametros para permitir reculsivida y en las diferentes direcciones ip
