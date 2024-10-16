@@ -22,9 +22,9 @@ Seguido nos conectamos mediante ssh a cada una de ellas
 ```shell
     vagrant ssh venus
 ``` 
-![Imagen ssh Venus](../img/sshVenus.PNG)
+![Imagen ssh Venus](./img/sshVenus.PNG)
 
 ```shell
     vagrant ssh tierra
 ``` 
-![Imagen ssh Tierra](../img/sshTierra.PNG)
+![Imagen ssh Tierra](./img/sshTierra.PNG)
