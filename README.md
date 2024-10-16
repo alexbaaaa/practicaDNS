@@ -50,7 +50,7 @@ Modificamos el archivo cambiando las opciones de:
 
 A estas nuevas: 
 
-![Imagen archivo named.conf.options NEW](./img/namdeConfigNEW.PNG)
+![Imagen archivo named.conf.options NEW](./img/namedConfigNEW.PNG)
 
 Con esto configuramos el archivo con lo requerido por la practica
 
