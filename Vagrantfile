@@ -2,6 +2,8 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
+  # Configuracion carpetas compartidas
+  config.vm.synced_folder "./config_file", "/vagrant_config_file"
   # Configuración de la máquina "venus"
   config.vm.define "venus" do |venus|
     venus.vm.box = "debian/bullseye64"
@@ -13,6 +15,8 @@ Vagrant.configure("2") do |config|
       apt-get update
       apt-get upgrade -y
       apt-get install -y bind9 dnsutils
+      # Copiado de archivo esterno de configuracion
+      cp ./vagrant_config_file/named.conf.options /etc/bind/
     SHELL
   end
 
@@ -27,6 +31,8 @@ Vagrant.configure("2") do |config|
       apt-get update
       apt-get upgrade -y
       apt-get install -y bind9 dnsutils
+      # Copiado de archivo esterno de configuracion
+      cp ./vagrant_config_file/named.conf.options /etc/bind/
     SHELL
   end
 
