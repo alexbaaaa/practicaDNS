@@ -52,7 +52,9 @@ A estas nuevas:
 
 ![Imagen archivo named.conf.options NEW](./img/namedConfigNEW.PNG)
 
-Con esto configuramos el archivo con lo requerido por la practica
+Con esto configuramos el archivo con lo requerido por la practica.
+
+
 
 
 Despues añadimos este mismo archivo a cada maquina virtual con: 
