@@ -66,3 +66,5 @@ Este comando lo añadimos a las dos provisiones
 
 
 Modificamos el archivo `named.conf.opstions` con los siguientes parametros para permitir reculsivida y en las diferentes direcciones ip
+
+![Imagen archivo named.conf.options NEW](./img/namedConfiOptions.PNG)
