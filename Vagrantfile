@@ -37,6 +37,7 @@ Vagrant.configure("2") do |config|
       # Copiado de archivo esterno de configuracion
       cp /vagrant_config_file/named.conf.options /etc/bind/
       cp /vagrant_config_file/tierra/named.conf.local /etc/bind/
+      cp /vagrant_config_file/tierra/sistema.test.dns /etc/bind/
       systemctl restart bind9
       systemctl restart named
       SHELL
