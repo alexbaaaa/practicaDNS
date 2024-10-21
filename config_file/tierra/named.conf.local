@@ -1,11 +1,6 @@
 # Zona directa para el dominio
 zone "sistema.test" {
     type master;
-    file "/etc/bind/zones/db.sistema.test"; 
+    file "/etc/bind/zones/sistema.test.dns"; 
 };
 
-# Zona inversa para la red 192.168.57.0/24
-zone "57.168.192.in-addr.arpa" {
-    type master;
-    file "/etc/bind/zones/db.192.168.57";  
-};
