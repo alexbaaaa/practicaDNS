@@ -1,11 +1,10 @@
+
+acl "clientes" {
+    127.0.0.0/8;        # Permitir consultas desde localhost
+    192.168.57.0/24;    # Permitir consultas desde la red privada
+};
 options {
     directory "/var/cache/bind";
-
-    acl "clientes" {
-        127.0.0.0/8;        # Permitir consultas desde localhost
-        192.168.57.0/24;    # Permitir consultas desde la red privada
-    };
-
     recursion yes;             
     allow-recursion { "clientes"; };  
     listen-on-v6 { none; };    
