@@ -1,10 +1,10 @@
 zone "sistema.test" {
     type master;
-    file "/etc/bind/zones/sistema.test.dns"; 
+    file "/etc/bind/sistema.test.dns"; 
 };
 
 zone "57.168.192.in-addr.arpa" {
     type master;
-    file "/etc/bind/zones/sistema.test.rev"; 
+    file "/etc/bind/sistema.test.rev"; 
 };
 

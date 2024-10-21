@@ -1,8 +1,11 @@
-//
-// Do any local configuration here
-//
+zone "sistema.test" {
+    type slave;
+    masters {192.168.57.103;};
+    file "/etc/bind/sistema.test.dns"; 
+};
 
-// Consider adding the 1918 zones here, if they are not used in your
-// organization
-//include "/etc/bind/zones.rfc1918";
-
+zone "57.168.192.in-addr.arpa" {
+    type slave;
+    masters {192.168.57.103;};
+    file "/etc/bind/sistema.test.rev"; 
+};
