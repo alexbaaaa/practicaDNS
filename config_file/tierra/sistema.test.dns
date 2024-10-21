@@ -1,13 +1,23 @@
 ; 
 ; sistema.test
-; 
-$TTL    86400 
-@   IN  SOA debian.sistema.test. admin.sistema.test. ( 
-                1           ; Serial       
-                3600        ; Refresh    
-                1800        ; Retry   
-                604800      ; Expire   
-                86400 )     ; Negative Cache TTL
-; 
-@               IN  NS      debian.sistema.test.
-debian.sistema.test. IN  A       192.168.57.103
+;
+$TTL    7200  
+@       IN      SOA     tierra.sistema.test. admin.sistema.test. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         7200 )       ; Negative Cache TTL
+
+; Registros A
+@       IN      A       192.168.57.102   ; Tierra
+@       IN      A       192.168.57.103   ; Venus
+@       IN      A       192.168.57.104   ; Marte
+
+; Alias para los servidores DNS
+ns1     IN      CNAME   tierra.sistema.test.
+ns2     IN      CNAME   venus.sistema.test.
+mail    IN      CNAME   marte.sistema.test.
+
+; Registro MX para el servidor de correo
+@       IN      MX      10 mail.sistema.test.
